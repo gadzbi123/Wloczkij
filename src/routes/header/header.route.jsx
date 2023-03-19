@@ -13,7 +13,6 @@ const Header = () => {
         <h1
           onAnimationEnd={() => {
             setHeadingAnimationEnded(true);
-            console.log(headingAnimationEnded);
           }}>
           Przeglądanie projektów z włóczki, nigdy nie było prostrze.
         </h1>

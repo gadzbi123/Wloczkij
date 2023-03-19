@@ -1,0 +1,28 @@
+{
+  "categories": [
+    {
+      "id": 0,
+      "title": "Ozdoby",
+      "imageUrl": "examples/makatka.jpeg",
+      "amount": 0
+    },
+    {
+      "id": 1,
+      "title": "Ubrania",
+      "imageUrl": "examples/orangeSweatshirt.png",
+      "amount": 0
+    },
+    {
+      "id": 2,
+      "title": "Gadżety",
+      "imageUrl": "examples/redHeart.png",
+      "amount": 0
+    },
+    {
+      "id": 3,
+      "title": "Zabawki",
+      "imageUrl": "examples/pilka.jpeg",
+      "amount": 0
+    }
+  ]
+}

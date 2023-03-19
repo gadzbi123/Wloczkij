@@ -1,3 +1,4 @@
+import styled, { css } from "styled-components";
 export const Colors = {
   darkGray: "#111",
   midGray: "#444",
@@ -11,3 +12,8 @@ export const Colors = {
   white: "#e4e4e4",
   whiteOpaque: "#eeeeee8b",
 };
+export const BaseComponentStyle = css`
+  margin: 0 auto;
+  height: 70vh;
+  width: 90vw;
+`;

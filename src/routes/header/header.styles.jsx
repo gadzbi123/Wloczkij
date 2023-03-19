@@ -4,12 +4,11 @@ import {
   animateInsertionText,
   animateInsertionScaling,
 } from "../../styles/animation.styles";
-import { Colors } from "../../styles/variables.styles";
+import { Colors, BaseComponentStyle } from "../../styles/variables.styles";
+
 import { ReactComponent as Wloczka } from "../../assets/wloczka.svg";
 export const HeaderContainer = styled.div`
-  margin: 0 auto;
-  height: 70vh;
-  width: 90vw;
+  ${BaseComponentStyle}
   box-shadow: 0 1 0 ${Colors.midGray};
   border-radius: 20px;
   background-color: ${Colors.whiteOpaque};
