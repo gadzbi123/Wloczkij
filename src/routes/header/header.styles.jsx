@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { css } from "styled-components";
 import {
   animateInsertionText,
   animateInsertionScaling,
@@ -28,12 +29,14 @@ export const HeadingTextContainer = styled.div`
     letter-spacing: -4px;
     ${animateInsertionText}
   }
+  .animate {
+    ${animateInsertionText}
+  }
   p {
+    opacity: 0;
     color: ${Colors.midGray};
     font-size: 40px;
     margin: 0;
-    ${animateInsertionText}
-    animation-delay: .5s;
     letter-spacing: -3px;
   }
 `;

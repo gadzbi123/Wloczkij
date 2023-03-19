@@ -1,3 +1,4 @@
+import { useState } from "react";
 import {
   HeaderContainer,
   WloczkaStyled,
@@ -5,11 +6,18 @@ import {
 } from "./header.styles";
 
 const Header = () => {
+  const [headingAnimationEnded, setHeadingAnimationEnded] = useState(false);
   return (
     <HeaderContainer>
       <HeadingTextContainer>
-        <h1>Przeglądanie projektów z włóczki, nigdy nie było prostrze. </h1>
-        <p>
+        <h1
+          onAnimationEnd={() => {
+            setHeadingAnimationEnded(true);
+            console.log(headingAnimationEnded);
+          }}>
+          Przeglądanie projektów z włóczki, nigdy nie było prostrze.
+        </h1>
+        <p className={headingAnimationEnded ? "animate" : ""}>
           Nowoczesne i innowacyjne projekty idealne na prezent dla każdej
           jesieniary. Możliwość wyboru kolorów.
         </p>

@@ -25,7 +25,7 @@ export const scaleUpRotate = keyframes`
 `;
 
 export const animateInsertionText = css`
-  animation: ${fadeInAndMoveIn} 1s ease-out;
+  animation: ${fadeInAndMoveIn} 0.5s ease-out forwards;
   transition: all;
   backface-visibility: hidden;
 `;
