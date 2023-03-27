@@ -1,16 +1,27 @@
-import { useContext } from "react";
-import { CategoriesContext } from "../../contexts/categories.context";
-import { CategoriesPreviewContainer } from "./categoriesPreview.styles";
-import CategoryPreview from "../categoryPreview/categoryPreview.component";
+import { useEffect } from "react";
+import { useDispatch, useSelector } from "react-redux";
 
+import { setCategories } from "../../store/categories/categories.reducer";
+import { getCategoriesSelector } from "../../store/categories/categories.selector";
+import { getData } from "../../utility/fetch.utility";
+import CategoryPreview from "../categoryPreview/categoryPreview.component";
+import { CategoriesPreviewContainer } from "./categoriesPreview.styles";
 const CategoriesPreview = () => {
-  const { categoryItems } = useContext(CategoriesContext);
+  const categories = useSelector(getCategoriesSelector);
+  const dispatch = useDispatch();
+  useEffect(() => {
+    const getCategories = async () => {
+      const categoriesData = await getData("/categories");
+      dispatch(setCategories(categoriesData));
+    };
+    getCategories();
+  }, []);
   return (
     <CategoriesPreviewContainer>
-      {categoryItems.map((category) => {
-        console.log("makeCategory");
-        return <CategoryPreview key={category.id} category={category} />;
-      })}
+      {categories &&
+        categories.map((category) => {
+          return <CategoryPreview key={category.id} category={category} />;
+        })}
     </CategoriesPreviewContainer>
   );
 };

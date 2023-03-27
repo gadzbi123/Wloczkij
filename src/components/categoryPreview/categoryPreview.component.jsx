@@ -1,10 +1,13 @@
-const CategoryPreview = ({ category }) => {
+import { CategoryPreviewContainer } from "./categoryPreview.styles";
+const CategoryPreview = ({ category: { id, imageUrl, title, amount } }) => {
   return (
-    <div key={category.id}>
-      <img src={category.imageUrl} alt={category.title}></img>
-      <h2>{category.title}</h2>
-      <h2>{category.amount}</h2>
-    </div>
+    <CategoryPreviewContainer>
+      <img src={imageUrl} alt={title} />
+      <div className="category-title-box">
+        <h2>{title}</h2>
+        <h3>({amount})</h3>
+      </div>
+    </CategoryPreviewContainer>
   );
 };
 export default CategoryPreview;

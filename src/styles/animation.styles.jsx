@@ -1,5 +1,4 @@
-import styled from "styled-components";
-import { keyframes, css } from "styled-components";
+import styled, { css, keyframes } from "styled-components";
 
 export const fadeInAndMoveIn = keyframes`
   0% {
@@ -24,7 +23,7 @@ export const scaleUpRotate = keyframes`
   }
 `;
 
-export const animateInsertionText = css`
+export const animateInsertionUpToDown = css`
   animation: ${fadeInAndMoveIn} 0.5s ease-out forwards;
   transition: all;
   backface-visibility: hidden;

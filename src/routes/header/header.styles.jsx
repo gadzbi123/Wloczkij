@@ -1,10 +1,9 @@
-import styled from "styled-components";
-import { css } from "styled-components";
+import styled, { css } from "styled-components";
 import {
-  animateInsertionText,
   animateInsertionScaling,
+  animateInsertionUpToDown,
 } from "../../styles/animation.styles";
-import { Colors, BaseComponentStyle } from "../../styles/variables.styles";
+import { BaseComponentStyle, Colors } from "../../styles/variables.styles";
 
 import { ReactComponent as Wloczka } from "../../assets/wloczka.svg";
 export const HeaderContainer = styled.div`
@@ -26,10 +25,10 @@ export const HeadingTextContainer = styled.div`
     color: ${Colors.darkGray};
     margin: 0;
     letter-spacing: -4px;
-    ${animateInsertionText}
+    ${animateInsertionUpToDown}
   }
   .animate {
-    ${animateInsertionText}
+    ${animateInsertionUpToDown}
   }
   p {
     opacity: 0;

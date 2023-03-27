@@ -6,6 +6,7 @@ export const NavigationContainer = styled.div`
   align-items: center;
   padding: 5px 5px;
   margin: 5px 10px;
+  margin-bottom: 30px;
   border-radius: 10px;
   border: 2px solid ${Colors.lightGray};
   background-color: ${Colors.white};
