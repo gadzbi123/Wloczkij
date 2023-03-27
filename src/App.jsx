@@ -1,7 +1,7 @@
-import { Routes, Route } from "react-router-dom";
-import Layout from "./routes/layout/layout.route";
-import Header from "./routes/header/header.route";
+import { Route, Routes } from "react-router-dom";
 import Contact from "./routes/contact/contact.route";
+import Header from "./routes/header/header.route";
+import Layout from "./routes/layout/layout.route";
 import Shop from "./routes/shop/shop.route";
 
 function App() {
@@ -10,7 +10,7 @@ function App() {
       <Route path="/" element={<Layout />}>
         <Route index element={<Header />} />
         <Route path="contact" element={<Contact />} />
-        <Route path="shop" element={<Shop />} />
+        <Route path="shop/*" element={<Shop />} />
       </Route>
     </Routes>
   );

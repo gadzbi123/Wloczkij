@@ -11,6 +11,7 @@ export const CategoryPreviewContainer = styled.div`
   overflow: hidden;
   border-radius: 20px;
   opacity: 90%;
+  cursor: pointer;
   ${animateInsertionUpToDown}
   background-color: #fff;
   img {

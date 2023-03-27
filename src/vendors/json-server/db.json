@@ -103,6 +103,12 @@
       "title": "Piłka",
       "imageUrl": "images/categories/pilka.jpeg",
       "category": "Zabawki"
+    },
+    {
+      "id": 13,
+      "title": "Muszka",
+      "imageUrl": "images/products/muszka.jpeg",
+      "category": "Gadżety"
     }
   ]
 }
