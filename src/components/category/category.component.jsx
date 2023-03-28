@@ -9,7 +9,10 @@ const Category = () => {
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
-    setProducts(allProducts.filter((product) => product.category === category));
+    const filtered = allProducts.filter(
+      (product) => product.category === category
+    );
+    setProducts(filtered);
   }, [allProducts, category]);
 
   return (

@@ -3,25 +3,25 @@
     {
       "id": 0,
       "title": "Ozdoby",
-      "imageUrl": "images/categories/makatka.jpeg",
+      "imageUrl": "/images/categories/makatka.jpeg",
       "amount": 0
     },
     {
       "id": 1,
       "title": "Ubrania",
-      "imageUrl": "images/categories/orangeSweatshirt.png",
+      "imageUrl": "/images/categories/orangeSweatshirt.png",
       "amount": 0
     },
     {
       "id": 2,
       "title": "Gadżety",
-      "imageUrl": "images/categories/redHeart.png",
+      "imageUrl": "/images/categories/redHeart.png",
       "amount": 0
     },
     {
       "id": 3,
       "title": "Zabawki",
-      "imageUrl": "images/categories/pilka.jpeg",
+      "imageUrl": "/images/categories/pilka.jpeg",
       "amount": 0
     }
   ],
@@ -29,85 +29,85 @@
     {
       "id": 0,
       "title": "Torba",
-      "imageUrl": "images/products/bag.png",
+      "imageUrl": "/images/products/bag.png",
       "category": "Gadżety"
     },
     {
       "id": 1,
       "title": "Czapka",
-      "imageUrl": "images/products/czapka.jpg",
+      "imageUrl": "/images/products/czapka.jpg",
       "category": "Ubrania"
     },
     {
       "id": 2,
       "title": "Duszek",
-      "imageUrl": "images/products/duszek.jpeg",
+      "imageUrl": "/images/products/duszek.jpeg",
       "category": "Zabawki"
     },
     {
       "id": 3,
       "title": "Kapcie",
-      "imageUrl": "images/products/kapcie.jpeg",
+      "imageUrl": "/images/products/kapcie.jpeg",
       "category": "Ubrania"
     },
     {
       "id": 4,
       "title": "Komin",
-      "imageUrl": "images/products/komin.jpg",
+      "imageUrl": "/images/products/komin.jpg",
       "category": "Ubrania"
     },
     {
       "id": 5,
       "title": "Leg Warmers",
-      "imageUrl": "images/products/leg_warmers.jpg",
+      "imageUrl": "/images/products/leg_warmers.jpg",
       "category": "Ubrania"
     },
     {
       "id": 6,
       "title": "Top",
-      "imageUrl": "images/products/top.jpeg",
+      "imageUrl": "/images/products/top.jpeg",
       "category": "Ubrania"
     },
     {
       "id": 7,
       "title": "Yoda Plush",
-      "imageUrl": "images/products/yoda_ania.jpeg",
+      "imageUrl": "/images/products/yoda_ania.jpeg",
       "category": "Zabawki"
     },
     {
       "id": 8,
       "title": "Zakładka",
-      "imageUrl": "images/products/zakladka.jpeg",
+      "imageUrl": "/images/products/zakladka.jpeg",
       "category": "Ozdoby"
     },
     {
       "id": 9,
       "title": "Makatka",
-      "imageUrl": "images/categories/makatka.jpeg",
+      "imageUrl": "/images/categories/makatka.jpeg",
       "category": "Ozdoby"
     },
     {
       "id": 10,
       "title": "Sweter",
-      "imageUrl": "images/categories/orangeSweatshirt.png",
+      "imageUrl": "/images/categories/orangeSweatshirt.png",
       "category": "Ubrania"
     },
     {
       "id": 11,
       "title": "Serce",
-      "imageUrl": "images/categories/redHeart.png",
+      "imageUrl": "/images/categories/redHeart.png",
       "category": "Gadżety"
     },
     {
       "id": 12,
       "title": "Piłka",
-      "imageUrl": "images/categories/pilka.jpeg",
+      "imageUrl": "/images/categories/pilka.jpeg",
       "category": "Zabawki"
     },
     {
       "id": 13,
       "title": "Muszka",
-      "imageUrl": "images/products/muszka.jpeg",
+      "imageUrl": "/images/products/muszka.jpeg",
       "category": "Gadżety"
     }
   ]
