@@ -1,6 +1,6 @@
 import styled, { css } from "styled-components";
 import {
-  animateInsertionScaling,
+  animateInsertionScalingRotate,
   animateInsertionUpToDown,
 } from "../../styles/animation.styles";
 import { BaseComponentStyle, Colors } from "../../styles/variables.styles";
@@ -44,5 +44,5 @@ export const WloczkaStyled = styled(Wloczka)`
   flex-shrink: 0;
   height: auto;
   font-weight: 300;
-  ${animateInsertionScaling}
+  ${animateInsertionScalingRotate}
 `;

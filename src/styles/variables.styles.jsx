@@ -14,6 +14,5 @@ export const Colors = {
 };
 export const BaseComponentStyle = css`
   margin: 0 auto;
-  height: 70vh;
-  width: 90vw;
+  max-width: 80vw;
 `;

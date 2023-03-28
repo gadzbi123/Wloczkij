@@ -2,7 +2,8 @@ import { useEffect, useState } from "react";
 import { useSelector } from "react-redux";
 import { useParams } from "react-router-dom";
 import { getProductsSelector } from "../../store/products/products.selector";
-import CategoryItem from "../category-item/category-item.component";
+import ProductItem from "../product-item/product-item.component";
+import { CategoryContainer } from "./category.styles";
 const Category = () => {
   const { category } = useParams();
   const allProducts = useSelector(getProductsSelector);
@@ -16,12 +17,14 @@ const Category = () => {
   }, [allProducts, category]);
 
   return (
-    <>
+    <CategoryContainer>
       <h2>{category}</h2>
-      {products.map((product) => (
-        <CategoryItem key={product.id} product={product} />
-      ))}
-    </>
+      <div className="products">
+        {products.map((product) => (
+          <ProductItem key={product.id} product={product} />
+        ))}
+      </div>
+    </CategoryContainer>
   );
 };
 export default Category;

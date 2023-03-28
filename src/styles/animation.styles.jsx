@@ -23,12 +23,24 @@ export const scaleUpRotate = keyframes`
   }
 `;
 
+export const scaleUp = keyframes`
+  0% {
+    scale: 0;
+}
+100% {
+    scale: 1;
+  }
+`;
+
 export const animateInsertionUpToDown = css`
   animation: ${fadeInAndMoveIn} 0.5s ease-out forwards;
   transition: all;
   backface-visibility: hidden;
 `;
 
-export const animateInsertionScaling = css`
+export const animateInsertionScalingRotate = css`
   animation: ${scaleUpRotate} 1s ease-out;
+`;
+export const animateInsertionScaling = css`
+  animation: ${scaleUp} 0.5s ease-out;
 `;

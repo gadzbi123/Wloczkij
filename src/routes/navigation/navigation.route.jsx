@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { ReactComponent as WloczykijLogo } from "../../assets/spirala.svg";
-import { NavigationContainer, LinksContainer } from "./navigation.styles";
 import { BackgroundContainer } from "../header/header.styles";
+import { LinksContainer, NavigationContainer } from "./navigation.styles";
 const Navigation = () => {
   return (
     <NavigationContainer>
@@ -10,7 +10,7 @@ const Navigation = () => {
       </Link>
       <LinksContainer>
         <Link to="/shop">Shop</Link>
-        <Link to="/contact">Contact</Link>
+        <Link to="/about">About</Link>
       </LinksContainer>
     </NavigationContainer>
   );

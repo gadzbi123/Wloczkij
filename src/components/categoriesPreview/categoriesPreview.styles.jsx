@@ -1,9 +1,7 @@
 import styled from "styled-components";
 import { BaseComponentStyle } from "../../styles/variables.styles";
 export const CategoriesPreviewContainer = styled.div`
-  margin: 0 auto;
-  /* height: 100vh; */
-  width: 90vw;
+  ${BaseComponentStyle}
   display: grid;
   grid-template-columns: 1fr 1fr;
   justify-items: center;
