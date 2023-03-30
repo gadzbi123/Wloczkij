@@ -1,6 +1,8 @@
-# Getting Started with Create React App
+# Project - Wloczkij
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was created for presentation of crocheting skills, that my sister has. It was made by using React Framework and localy hosted json-server.
+
+## Getting Started with Create React App
 
 ## Available Scripts
 
