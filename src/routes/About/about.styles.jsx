@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { ReactComponent as FacebookSvg } from "../../assets/facebook-fill.svg";
 import { animateInsertionScaling } from "../../styles/animation.styles";
-import { BaseComponentStyle, Colors } from "../../styles/variables.styles";
+import { Colors, DisplaySizes } from "../../styles/variables.styles";
 export const FaceBookStyledSvg = styled(FacebookSvg)`
   width: 30px;
   height: 30px;
@@ -29,7 +29,6 @@ export const AboutContainer = styled.div`
     align-self: flex-start;
     margin-top: 20px;
   }
-
   p {
     margin-top: 10px;
     margin: 10px 40px;
@@ -39,7 +38,6 @@ export const AboutContainer = styled.div`
       cursor: pointer;
     }
   }
-
   .contact {
     p {
       margin: 0;
@@ -47,5 +45,31 @@ export const AboutContainer = styled.div`
     display: flex;
     gap: 40px;
     align-items: center;
+  }
+  @media ${DisplaySizes.smallPC} {
+    max-width: 80vw;
+  }
+  @media ${DisplaySizes.tablet} {
+    max-width: 90vw;
+    h1 {
+      font-size: 24px;
+    }
+    h2 {
+      font-size: 20px;
+    }
+  }
+  @media ${DisplaySizes.mobile} {
+    h1 {
+      font-size: 18px;
+      align-self: center;
+    }
+    h2 {
+      font-size: 16px;
+      align-self: center;
+    }
+    p {
+      font-size: 12px;
+    }
+    text-align: center;
   }
 `;

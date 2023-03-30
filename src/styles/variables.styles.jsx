@@ -1,4 +1,9 @@
-import styled, { css } from "styled-components";
+import { css } from "styled-components";
+export const DisplaySizes = {
+  smallPC: `(max-width: 1350px)`,
+  tablet: `(max-width: 1000px)`,
+  mobile: `(max-width: 670px)`,
+};
 export const Colors = {
   darkGray: "#111",
   midGray: "#444",
@@ -16,4 +21,7 @@ export const Colors = {
 export const BaseComponentStyle = css`
   margin: 0 auto;
   max-width: 80vw;
+  @media ${DisplaySizes.tablet} {
+    max-width: 90vw;
+  }
 `;

@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import { useDispatch } from "react-redux";
 import { Route, Routes } from "react-router-dom";
 import CategoriesPreview from "../../components/categoriesPreview/categoriesPreview.component";
-import Category from "../../components/category/category.component";
+import CategoryWithProducts from "../../components/categoryWithProducts/categoryWithProducts.component";
 import { setCategories } from "../../store/categories/categories.reducer";
 import { setProducts } from "../../store/products/products.reducer";
 import { getData } from "../../utility/fetch.utility";
@@ -25,7 +25,7 @@ const Shop = () => {
   return (
     <Routes>
       <Route index element={<CategoriesPreview />} />
-      <Route path=":category" element={<Category />} />
+      <Route path=":category" element={<CategoryWithProducts />} />
     </Routes>
   );
 };

@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Colors } from "../../styles/variables.styles";
+import { Colors, DisplaySizes } from "../../styles/variables.styles";
 export const NavigationContainer = styled.div`
   display: flex;
   justify-content: space-around;
@@ -16,6 +16,14 @@ export const NavigationContainer = styled.div`
     transition: 0.2s all;
     &:hover {
       scale: 1.03;
+    }
+    @media ${DisplaySizes.tablet} {
+      width: 50px;
+      padding: 0;
+    }
+    @media ${DisplaySizes.mobile} {
+      width: 35px;
+      padding: 0;
     }
   }
 `;
@@ -35,5 +43,16 @@ export const LinksContainer = styled.div`
       box-shadow: 0 1px 0 ${Colors.gray};
       text-shadow: 0 0px 2px ${Colors.midShadow};
     }
+    @media ${DisplaySizes.tablet} {
+      font-size: 20px;
+      white-space: nowrap;
+    }
+  }
+  @media ${DisplaySizes.tablet} {
+    gap: 30px;
+  }
+  @media ${DisplaySizes.mobile} {
+    gap: 0;
+    width: 40%;
   }
 `;

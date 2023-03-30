@@ -1,11 +1,12 @@
-import styled, { keyframes } from "styled-components";
-import { Colors } from "../../styles/variables.styles";
+import styled from "styled-components";
+import { Colors, DisplaySizes } from "../../styles/variables.styles";
 
 export const ProductItemContainer = styled.div`
   cursor: pointer;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
   width: 100%;
   height: 350px;
   background-color: ${Colors.orange};
@@ -15,7 +16,6 @@ export const ProductItemContainer = styled.div`
   &.different {
     background-color: ${Colors.red};
   }
-
   img {
     height: 80%;
   }
@@ -25,9 +25,18 @@ export const ProductItemContainer = styled.div`
     font-size: 24px;
     height: 20%;
     margin: 0;
+    @media ${DisplaySizes.tablet} {
+      font-size: 20px;
+    }
+    @media ${DisplaySizes.mobile} {
+      font-size: 18px;
+    }
   }
   &:hover {
     box-shadow: 0 0 0 2px ${Colors.darkRed};
+  }
+  @media ${DisplaySizes.tablet} {
+    height: 300px;
   }
 `;
 
@@ -58,16 +67,26 @@ export const ModalContainer = styled.div`
     border-radius: 100px;
     box-shadow: 0 0 10px 2px ${Colors.darkGray};
     transition: all 0.5s;
+    text-align: center;
     .image-box {
       overflow: hidden;
       align-items: center;
       display: flex;
+      justify-content: center;
+      width: 100%;
       img {
-        width: 100%;
+        /* width: 70%; */
+        height: 120%;
+        scale: 1.1;
+        @media ${DisplaySizes.smallPC} {
+          width: 100%;
+          height: auto;
+          scale: 1;
+        }
       }
     }
     h3 {
-      margin: 20px;
+      margin: 20px 0;
       font-size: 34px;
     }
     p {
@@ -75,6 +94,20 @@ export const ModalContainer = styled.div`
       width: 80%;
       margin: 0;
       margin-bottom: 20px;
+    }
+    @media ${DisplaySizes.tablet} {
+      h3 {
+        font-size: 24px;
+        margin: 10px 0;
+      }
+      p {
+        font-size: 12px;
+        margin-bottom: 15px;
+      }
+      height: 60%;
+    }
+    @media ${DisplaySizes.mobile} {
+      height: 50%;
     }
   }
 `;

@@ -3,8 +3,8 @@ import { useSelector } from "react-redux";
 import { useParams } from "react-router-dom";
 import { getProductsSelector } from "../../store/products/products.selector";
 import ProductItem from "../product-item/product-item.component";
-import { CategoryContainer } from "./category.styles";
-const Category = () => {
+import { CategoryContainer } from "./categoryWithProducts.styles";
+const CategoryWithProducts = () => {
   const { category } = useParams();
   const allProducts = useSelector(getProductsSelector);
   const [products, setProducts] = useState([]);
@@ -27,4 +27,4 @@ const Category = () => {
     </CategoryContainer>
   );
 };
-export default Category;
+export default CategoryWithProducts;

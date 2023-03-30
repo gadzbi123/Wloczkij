@@ -1,9 +1,13 @@
-import styled, { css } from "styled-components";
+import styled from "styled-components";
 import {
   animateInsertionScalingRotate,
   animateInsertionUpToDown,
 } from "../../styles/animation.styles";
-import { BaseComponentStyle, Colors } from "../../styles/variables.styles";
+import {
+  BaseComponentStyle,
+  Colors,
+  DisplaySizes,
+} from "../../styles/variables.styles";
 
 import { ReactComponent as Wloczka } from "../../assets/wloczka.svg";
 export const HeaderContainer = styled.div`
@@ -13,6 +17,9 @@ export const HeaderContainer = styled.div`
   background-color: ${Colors.whiteOpaque};
   display: flex;
   justify-content: space-between;
+  @media ${DisplaySizes.mobile} {
+    height: 40vh;
+  }
 `;
 
 export const HeadingTextContainer = styled.div`
@@ -37,6 +44,32 @@ export const HeadingTextContainer = styled.div`
     margin: 0;
     letter-spacing: -3px;
   }
+  @media ${DisplaySizes.smallPC} {
+    h1 {
+      font-size: 50px;
+    }
+    p {
+      font-size: 30px;
+    }
+  }
+  @media ${DisplaySizes.tablet} {
+    h1 {
+      font-size: 35px;
+      letter-spacing: 0px;
+    }
+    p {
+      font-size: 20px;
+      letter-spacing: 0px;
+    }
+  }
+  @media ${DisplaySizes.mobile} {
+    h1 {
+      font-size: 30px;
+    }
+    p {
+      font-size: 18px;
+    }
+  }
 `;
 
 export const WloczkaStyled = styled(Wloczka)`
@@ -45,4 +78,10 @@ export const WloczkaStyled = styled(Wloczka)`
   height: auto;
   font-weight: 300;
   ${animateInsertionScalingRotate}
+  @media ${DisplaySizes.smallPC} {
+    width: 35%;
+  }
+  @media ${DisplaySizes.mobile} {
+    width: 40%;
+  }
 `;

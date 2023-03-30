@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { animateInsertionUpToDown } from "../../styles/animation.styles";
+import { DisplaySizes } from "../../styles/variables.styles";
 export const CategoryPreviewContainer = styled.div`
   display: flex;
   flex-direction: column;
@@ -36,6 +37,22 @@ export const CategoryPreviewContainer = styled.div`
       font-size: 20px;
       margin: 0;
     }
+    @media ${DisplaySizes.tablet} {
+      h2 {
+        font-size: 20px;
+      }
+      h3 {
+        font-size: 16px;
+      }
+    }
+    @media ${DisplaySizes.mobile} {
+      h2 {
+        font-size: 16px;
+      }
+      h3 {
+        font-size: 14px;
+      }
+    }
   }
   &:hover img {
     scale: 1.05;
@@ -43,5 +60,8 @@ export const CategoryPreviewContainer = styled.div`
   }
   &:hover .category-title-box {
     opacity: 1;
+  }
+  @media ${DisplaySizes.mobile} {
+    height: 250px;
   }
 `;
