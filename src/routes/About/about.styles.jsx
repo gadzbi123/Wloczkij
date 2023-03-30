@@ -33,6 +33,11 @@ export const AboutContainer = styled.div`
   p {
     margin-top: 10px;
     margin: 10px 40px;
+    span {
+      color: blue;
+      text-decoration: underline;
+      cursor: pointer;
+    }
   }
 
   .contact {
