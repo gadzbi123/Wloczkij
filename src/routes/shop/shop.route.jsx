@@ -5,19 +5,20 @@ import CategoriesPreview from "../../components/categoriesPreview/categoriesPrev
 import CategoryWithProducts from "../../components/categoryWithProducts/categoryWithProducts.component";
 import { setCategories } from "../../store/categories/categories.reducer";
 import { setProducts } from "../../store/products/products.reducer";
-import { getData } from "../../utility/fetch.utility";
+import { getCollectionAndDocuments } from "../../utility/firebase.utility";
+
 const Shop = () => {
   const dispatch = useDispatch();
   useEffect(() => {
     const getCategories = async () => {
-      const categoriesData = await getData("/categories");
+      const categoriesData = await getCollectionAndDocuments("categories");
       dispatch(setCategories(categoriesData));
     };
     getCategories();
   }, []);
   useEffect(() => {
     const getProducts = async () => {
-      const productsData = await getData("/products");
+      const productsData = await getCollectionAndDocuments("products");
       dispatch(setProducts(productsData));
     };
     getProducts();

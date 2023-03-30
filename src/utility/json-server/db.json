@@ -3,25 +3,25 @@
     {
       "id": 0,
       "title": "Ozdoby",
-      "imageUrl": "/images/categories/makatka.jpeg",
+      "imageUrl": "https://i.ibb.co/wdHd8Xn/makatka.jpg",
       "amount": 0
     },
     {
       "id": 1,
       "title": "Ubrania",
-      "imageUrl": "/images/categories/orangeSweatshirt.png",
+      "imageUrl": "https://i.ibb.co/t4rVNSY/orange-Sweatshirt.png",
       "amount": 0
     },
     {
       "id": 2,
       "title": "Gadżety",
-      "imageUrl": "/images/categories/redHeart.png",
+      "imageUrl": "https://i.ibb.co/pWxhQGL/redHeart.png",
       "amount": 0
     },
     {
       "id": 3,
       "title": "Zabawki",
-      "imageUrl": "/images/categories/pilka.jpeg",
+      "imageUrl": "https://i.ibb.co/DDHTVg4/pilka.jpg",
       "amount": 0
     }
   ],
@@ -29,98 +29,98 @@
     {
       "id": 0,
       "title": "Makatka",
-      "imageUrl": "/images/categories/makatka.jpeg",
+      "imageUrl": "https://i.ibb.co/wdHd8Xn/makatka.jpg",
       "category": "Ozdoby",
       "description": "Kolorowy baner, który można powiesić w dowolnym miejscu. Może być zrobiony w dowolnym kolorze i z dowolnym wzorem."
     },
     {
       "id": 1,
       "title": "Sweter",
-      "imageUrl": "/images/categories/orangeSweatshirt.png",
+      "imageUrl": "https://i.ibb.co/t4rVNSY/orange-Sweatshirt.png",
       "category": "Ubrania",
       "description": "Kolorowy sweter. Idealny na jesienne i zimowe wieczory. Może być zrobiony w dowolnym kolorze, w dowolnym rozmiarze."
     },
     {
       "id": 2,
       "title": "Serce",
-      "imageUrl": "/images/categories/redHeart.png",
+      "imageUrl": "https://i.ibb.co/pWxhQGL/redHeart.png",
       "category": "Gadżety",
       "description": "Czerwone serce jako prezent dla ukochanej osoby. Może być zrobiony w dowolnym kolorze (preferowany czerwony)."
     },
     {
       "id": 3,
       "title": "Piłka",
-      "imageUrl": "/images/categories/pilka.jpeg",
+      "imageUrl": "https://i.ibb.co/DDHTVg4/pilka.jpg",
       "category": "Zabawki",
       "description": "Zabawka dla dziecka lub kotka. Idealnie sprawdza się w uspokojeniu. Może być zrobiona w dowolnym kolorze."
     },
     {
       "id": 4,
       "title": "Komin",
-      "imageUrl": "/images/products/komin.jpg",
+      "imageUrl": "https://i.ibb.co/KqvzknC/komin.jpg",
       "category": "Ubrania",
       "description": "Kolorowy komin. Idealny na mroźne temperatury w srogie zimy. Może być zrobiony w dowolnym kolorze, w dowolnym rozmiarze."
     },
     {
       "id": 5,
       "title": "Leg Warmers",
-      "imageUrl": "/images/products/leg_warmers.jpg",
+      "imageUrl": "https://i.ibb.co/7WZHSPD/leg-warmers.jpg",
       "category": "Ubrania",
       "description": "Kolorowe ogrzewacze do stóp. Doskonale sprawdzają się przy dużych opadach śniegu. Mogą być zrobione w dowolnym kolorze, w dowolnym rozmiarze."
     },
     {
       "id": 6,
       "title": "Top",
-      "imageUrl": "/images/products/top.jpeg",
+      "imageUrl": "https://i.ibb.co/tDcBKDm/top.jpg",
       "category": "Ubrania",
       "description": "Bluzka na ramiączkach. Wygodna i stylowa. Może być zrobiona w dowolnym kolorze, w dowolnym rozmiarze."
     },
     {
       "id": 7,
       "title": "Yoda Plush",
-      "imageUrl": "/images/products/yoda_ania.jpeg",
+      "imageUrl": "https://i.ibb.co/B2f7n1K/yoda-ania.jpg",
       "category": "Zabawki",
       "description": "Zabawka dla dziecka lub fana Gwiezdnych Wojen. Bardzo miły w dotyku. Idealny prezent dla entuzjasty"
     },
     {
       "id": 8,
       "title": "Zakładka",
-      "imageUrl": "/images/products/zakladka.jpeg",
+      "imageUrl": "https://i.ibb.co/xSpKD2z/zakladka.jpg",
       "category": "Ozdoby",
       "description": "Jednokolorowa zakładka dla książkowego maniaka. Bardzo wygodny sposób na zachowanie ostatnio czytanej strony."
     },
     {
       "id": 9,
       "title": "Torba",
-      "imageUrl": "/images/products/bag.png",
+      "imageUrl": "https://i.ibb.co/XWTFvFb/bag.png",
       "category": "Gadżety",
       "description": "Torba damska. Wygodna i stylowa. Może być zrobiona w dowolnym kolorze, w dowolnym rozmiarze."
     },
     {
       "id": 10,
       "title": "Czapka",
-      "imageUrl": "/images/products/czapka.jpg",
+      "imageUrl": "https://i.ibb.co/P58rCgK/czapka.jpg",
       "category": "Ubrania",
       "description": "Czapka zimowa. Idealny prezent dla każdej jesieniary. Może być zrobiona w dowolnym kolorze, w dowolnym rozmiarze."
     },
     {
       "id": 11,
       "title": "Duszek",
-      "imageUrl": "/images/products/duszek.jpeg",
+      "imageUrl": "https://i.ibb.co/8gnXYbB/duszek.jpg",
       "category": "Zabawki",
       "description": "Wełniany duszek. Idealny prezent i jednocześnie najtańszy produkt z galerii. Może być zrobiony w dowolnym kolorze."
     },
     {
       "id": 12,
       "title": "Kapcie",
-      "imageUrl": "/images/products/kapcie.jpeg",
+      "imageUrl": "https://i.ibb.co/xFvbNXb/kapcie.jpg",
       "category": "Ubrania",
       "description": "Pantofle, bambosze, papucie. Dobrze przystosowane do zimnych nawierzchni. Mogą być zrobione w dowolnym kolorze, w dowolnym rozmiarze."
     },
     {
       "id": 13,
       "title": "Muszka",
-      "imageUrl": "/images/products/muszka.jpeg",
+      "imageUrl": "https://i.ibb.co/ZmtGYNN/muszka.jpg",
       "category": "Gadżety",
       "description": "Muszka dla mężczyzny lub zwierzaka (np. kota). Stylowa i unikatowa. Może być zrobiona w dowolnym kolorze, w dowolnym rozmiarze."
     }
