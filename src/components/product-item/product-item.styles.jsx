@@ -49,20 +49,32 @@ export const ModalContainer = styled.div`
     left: 50%;
     transform: translate(-50%, -50%);
     height: 70%;
+    width: 40%;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     align-items: center;
     overflow: hidden;
     border-radius: 100px;
     box-shadow: 0 0 10px 2px ${Colors.darkGray};
     transition: all 0.5s;
-    img {
-      height: 80%;
-      /* height: 70vh; */
+    .image-box {
+      overflow: hidden;
+      align-items: center;
+      display: flex;
+      img {
+        width: 100%;
+      }
     }
     h3 {
+      margin: 20px;
+      font-size: 34px;
+    }
+    p {
+      text-align: center;
+      width: 80%;
       margin: 0;
-      align-self: center;
+      margin-bottom: 20px;
     }
   }
 `;

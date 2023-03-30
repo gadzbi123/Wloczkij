@@ -9,8 +9,8 @@ const Navigation = () => {
         <WloczykijLogo />
       </Link>
       <LinksContainer>
-        <Link to="/shop">Shop</Link>
-        <Link to="/about">About</Link>
+        <Link to="/shop">Sklep</Link>
+        <Link to="/about">O mnie</Link>
       </LinksContainer>
     </NavigationContainer>
   );

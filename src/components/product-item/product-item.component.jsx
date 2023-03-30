@@ -20,7 +20,9 @@ const ProductItem = ({ product: { title, imageUrl, id, description } }) => {
       {!modalIsClosed && (
         <ModalContainer onClick={(e) => closeModal(e)}>
           <div className="modal-box">
-            <img src={imageUrl} alt={title} />
+            <div className="image-box">
+              <img src={imageUrl} alt={title} />
+            </div>
             <h3>{title}</h3>
             <p>{description}</p>
           </div>
