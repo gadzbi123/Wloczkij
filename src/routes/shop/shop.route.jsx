@@ -10,19 +10,15 @@ import { getCollectionAndDocuments } from "../../utility/firebase.utility";
 const Shop = () => {
   const dispatch = useDispatch();
   useEffect(() => {
-    const getCategories = async () => {
+    const getCategoriesAndProducts = async () => {
       const categoriesData = await getCollectionAndDocuments("categories");
       dispatch(setCategories(categoriesData));
-    };
-    getCategories();
-  }, []);
-  useEffect(() => {
-    const getProducts = async () => {
       const productsData = await getCollectionAndDocuments("products");
       dispatch(setProducts(productsData));
     };
-    getProducts();
+    getCategoriesAndProducts();
   }, []);
+
   return (
     <Routes>
       <Route index element={<CategoriesPreview />} />
