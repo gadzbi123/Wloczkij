@@ -8,7 +8,7 @@ const About = () => {
   useEffect(() => {
     const currentTime = new Date();
     const birthDay = new Date(2007, 6, 6);
-    const crochetStart = new Date(2020, 2, 20);
+    const crochetStart = new Date(2022, 2, 20);
     const MILISEC_TO_YEARS = 31_556_952_000;
 
     const crochetTime = Math.floor(
