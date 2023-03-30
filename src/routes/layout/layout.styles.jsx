@@ -7,4 +7,6 @@ export const BackgroundContainer = styled.div`
   background-size: cover;
   overflow: hidden auto;
   z-index: -100;
+  display: flex;
+  flex-direction: column;
 `;

@@ -1,12 +1,14 @@
 import { Outlet } from "react-router-dom";
-import { BackgroundContainer } from "./layout.styles";
+import Footer from "../../components/footer/footer.component";
 import Navigation from "../navigation/navigation.route";
+import { BackgroundContainer } from "./layout.styles";
 const Layout = () => {
   return (
     <>
       <BackgroundContainer>
         <Navigation />
         <Outlet />
+        <Footer />
       </BackgroundContainer>
     </>
   );
