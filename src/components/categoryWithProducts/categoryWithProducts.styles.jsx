@@ -36,5 +36,8 @@ export const CategoryContainer = styled.div`
       grid-template-columns: repeat(2, 1fr);
       max-width: 70vw;
     }
+    @media ${DisplaySizes.smallMobile} {
+      grid-template-columns: 1fr;
+    }
   }
 `;

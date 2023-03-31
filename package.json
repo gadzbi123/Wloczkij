@@ -21,9 +21,9 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "server": "json-server --watch src/vendors/json-server/db.json -c ./src/vendors/json-server/settings.json",
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "server": "json-server --watch src/vendors/json-server/db.json -c ./src/vendors/json-server/settings.json",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },

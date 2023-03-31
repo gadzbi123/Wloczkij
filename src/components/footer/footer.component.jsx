@@ -11,7 +11,7 @@ const Footer = () => {
       <p>Kacper Nitkiewicz</p>
       <p>© {currentYear}</p>
       <p>Wszystkie prawa zastrzeżone</p>
-      <p>Kontakt z administratorem: {CONTACT_ADMINISTRATOR}</p>
+      <p>Kontakt z adminem: {CONTACT_ADMINISTRATOR}</p>
     </FooterContainer>
   );
 };

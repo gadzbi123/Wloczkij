@@ -20,6 +20,13 @@ export const HeaderContainer = styled.div`
   @media ${DisplaySizes.mobile} {
     height: 40vh;
   }
+  @media ${DisplaySizes.smallMobile} {
+    /* height: 60vh; */
+    text-align: center;
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+  }
 `;
 
 export const HeadingTextContainer = styled.div`
@@ -64,10 +71,20 @@ export const HeadingTextContainer = styled.div`
   }
   @media ${DisplaySizes.mobile} {
     h1 {
-      font-size: 30px;
+      font-size: 25px;
     }
     p {
-      font-size: 18px;
+      font-size: 16px;
+    }
+  }
+  @media ${DisplaySizes.smallMobile} {
+    padding: 5px 5px;
+    h1 {
+      font-size: 20px;
+      margin-bottom: 5px;
+    }
+    p {
+      font-size: 12px;
     }
   }
 `;
@@ -82,6 +99,6 @@ export const WloczkaStyled = styled(Wloczka)`
     width: 35%;
   }
   @media ${DisplaySizes.mobile} {
-    width: 40%;
+    width: 50%;
   }
 `;

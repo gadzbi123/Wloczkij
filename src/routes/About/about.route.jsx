@@ -1,7 +1,11 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import { SHOP_URL } from "../../static/variables";
-import { AboutContainer, FaceBookStyledSvg } from "./about.styles";
+import { CONTACT_ANNA, SHOP_URL } from "../../static/variables";
+import {
+  AboutContainer,
+  GoogleMailStyledSvg,
+  VintedStyledSvg,
+} from "./about.styles";
 const About = () => {
   const [age, setAge] = useState(0);
   const [crochetString, setCrochetString] = useState("");
@@ -19,25 +23,26 @@ const About = () => {
     setAge(Math.floor((currentTime - birthDay) / MILISEC_TO_YEARS));
   }, []);
 
+  const handleSendEmail = () => (window.location = CONTACT_ANNA);
   return (
     <AboutContainer>
       <h1>O mnie</h1>
       <p>
         Jestem Ania. Mam {age} lat uczennicą Liceum w Gliwicach. Interesuje się
-        ksiażkami i chetnie nawiązuje nowe znajomości. Szydełkowaniem zajmuję
-        się od {crochetString}. Wystawiam swoje produkty na stronie{" "}
-        <Link to={SHOP_URL} target="_blank">
-          {SHOP_URL}
-        </Link>
-        .
+        ksiażkami i lubie sprawy kryminalne - True Crime. Szydełkowaniem zajmuję
+        się od {crochetString}. Wystawiam swoje produkty na Vinted.
       </p>
       <p>Uważaj, bo zaskocze cię swoimi szydełkowymi umiejetnościami!</p>
       <h2>Kontakt</h2>
       <div className="contact">
         <p>Anna Nitkiewicz</p>
-        <Link to={"https://www.facebook.com/ania.nitkiewicz.5"} target="_blank">
-          <FaceBookStyledSvg />
+        <Link to={SHOP_URL} target="_blank">
+          <VintedStyledSvg />
         </Link>
+        <GoogleMailStyledSvg onClick={handleSendEmail} />
+        {/* <Link to={"https://www.facebook.com/ania.nitkiewicz.5"} target="_blank">
+          <FaceBookStyledSvg />
+        </Link> */}
       </div>
     </AboutContainer>
   );

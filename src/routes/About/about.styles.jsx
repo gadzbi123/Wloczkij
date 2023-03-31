@@ -1,11 +1,31 @@
 import styled from "styled-components";
 import { ReactComponent as FacebookSvg } from "../../assets/facebook-fill.svg";
+import { ReactComponent as GoogleMailSvg } from "../../assets/gmail.svg";
+import { ReactComponent as VintedSvg } from "../../assets/vinted.svg";
 import { animateInsertionScaling } from "../../styles/animation.styles";
 import { Colors, DisplaySizes } from "../../styles/variables.styles";
 export const FaceBookStyledSvg = styled(FacebookSvg)`
   width: 30px;
   height: 30px;
   fill: #4267b2;
+  transition: all 0.2s;
+  &:hover {
+    filter: drop-shadow(0 0 2px ${Colors.midShadow});
+    scale: 1.1;
+  }
+`;
+export const VintedStyledSvg = styled(VintedSvg)`
+  width: 55px;
+  height: auto;
+  transition: all 0.2s;
+  &:hover {
+    filter: drop-shadow(0 0 2px ${Colors.midShadow});
+    scale: 1.1;
+  }
+`;
+export const GoogleMailStyledSvg = styled(GoogleMailSvg)`
+  width: 35px;
+  height: auto;
   transition: all 0.2s;
   &:hover {
     filter: drop-shadow(0 0 2px ${Colors.midShadow});
@@ -45,6 +65,7 @@ export const AboutContainer = styled.div`
     display: flex;
     gap: 40px;
     align-items: center;
+    padding-bottom: 20px;
   }
   @media ${DisplaySizes.smallPC} {
     max-width: 80vw;
@@ -59,6 +80,7 @@ export const AboutContainer = styled.div`
     }
   }
   @media ${DisplaySizes.mobile} {
+    text-align: center;
     h1 {
       font-size: 18px;
       align-self: center;
@@ -70,6 +92,8 @@ export const AboutContainer = styled.div`
     p {
       font-size: 12px;
     }
-    text-align: center;
+    .contact {
+      gap: 30px;
+    }
   }
 `;

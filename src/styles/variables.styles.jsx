@@ -3,6 +3,7 @@ export const DisplaySizes = {
   smallPC: `(max-width: 1350px)`,
   tablet: `(max-width: 1000px)`,
   mobile: `(max-width: 670px)`,
+  smallMobile: `(max-width: 450px)`,
 };
 export const Colors = {
   darkGray: "#111",

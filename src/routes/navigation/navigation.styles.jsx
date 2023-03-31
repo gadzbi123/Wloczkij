@@ -55,4 +55,7 @@ export const LinksContainer = styled.div`
     gap: 0;
     width: 40%;
   }
+  @media ${DisplaySizes.smallMobile} {
+    width: 45%;
+  }
 `;

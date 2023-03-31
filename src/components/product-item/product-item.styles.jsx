@@ -75,7 +75,6 @@ export const ModalContainer = styled.div`
       justify-content: center;
       width: 100%;
       img {
-        /* width: 70%; */
         height: 120%;
         scale: 1.1;
         @media ${DisplaySizes.smallPC} {
@@ -96,6 +95,7 @@ export const ModalContainer = styled.div`
       margin-bottom: 20px;
     }
     @media ${DisplaySizes.tablet} {
+      border-radius: 50px;
       h3 {
         font-size: 24px;
         margin: 10px 0;
@@ -107,7 +107,12 @@ export const ModalContainer = styled.div`
       height: 60%;
     }
     @media ${DisplaySizes.mobile} {
+      border-radius: 30px;
       height: 50%;
+    }
+    @media ${DisplaySizes.smallMobile} {
+      border-radius: 10px;
+      width: 70vw;
     }
   }
 `;
