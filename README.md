@@ -1,6 +1,6 @@
 # Project - Wloczkij
 
-This project was created for presentation of crocheting skills, that my sister has. It was made by using React Framework and localy hosted json-server.
+This project was created for presentation of crocheting skills, that my sister has. It was made by using React Framework and localy hosted json-server. Project can be seen [here](https://crochetingmylife.netlify.app).
 
 ## Getting Started with Create React App
 
